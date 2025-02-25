@@ -56,8 +56,8 @@ todo_parser.add_argument('task_id', metavar='task_id', type=int, help='The ID of
 mark_in_progress_parser = subparsers.add_parser('mark-in-progress', help='Update tasks status to \'in-progress\'')
 mark_in_progress_parser.add_argument('task_id', metavar='task_id', type=int, help='The ID of the task to status update')
 
-# Subcommand 'done'
-done_parser = subparsers.add_parser('done', help='Update tasks status to \'done\'')
+# Subcommand 'mark-done'
+done_parser = subparsers.add_parser('mark-done', help='Update tasks status to \'done\'')
 done_parser.add_argument('task_id', metavar='task_id', type=int, help='The ID of the task to status update')
 
 # Load tasks data
@@ -67,7 +67,7 @@ def add_task(description):
     new_task = {
         "id":generate_unique_id(data_tasks["tasks"]),
         "description": description,
-        "status": "", # the default of new task is empty string
+        "status": "todo", # the default status of new task is "todo"
         "createAt": datetime.now().isoformat(),
         "updatedAt": datetime.now().isoformat()
     }
@@ -140,7 +140,7 @@ elif args.command == 'todo':
     mark_task(args.task_id,"todo")
 elif args.command == 'mark-in-progress':
     mark_task(args.task_id,"in-progress")
-elif args.command == 'done':
+elif args.command == 'mark-done':
     mark_task(args.task_id,"done")
 
 def main():
