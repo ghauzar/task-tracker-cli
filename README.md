@@ -1,5 +1,5 @@
 <h1>Task Tracker CLI Program</h1>
-Simple Python CLI program to track daily tasks. All tasks were stored in a file with JSON format. Built for educational purposes.
+Simple Python CLI program to track daily tasks. All tasks were stored in a file with JSON format. Built for educational purposes. Simple unit tests are included.
 
 <h3>Task Properties 👨‍💻</h3>
 Each task has the following properties:
