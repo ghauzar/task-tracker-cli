@@ -5,10 +5,10 @@
 <p>Each task has the following properties:</p>
 <ul>
   <li>`id`: A unique identifier for the task</li>
-  <li>description: A short description of the task</li>
-  <li>status: The status of the task (todo, in-progress, done)</li>
-  <li>createdAt: The date and time when the task was created</li>
-  <li>updatedAt: The date and time when the task was last updated</li>
+  <li>`description`: A short description of the task</li>
+  <li>`status`: The status of the task (todo, in-progress, done)</li>
+  <li>`createdAt`: The date and time when the task was created</li>
+  <li>`updatedAt`: The date and time when the task was last updated</li>
 </ul>
 
 
