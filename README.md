@@ -60,4 +60,4 @@ Delete task:
 python main.py delete [task_id]
 ```
 
-Project URL ==> [TaskTrackerCLI](https://github.com/ghauzar/task-tracker-cli)
+Project URL ==> [TaskTrackerCLI](https://roadmap.sh/projects/task-tracker)
